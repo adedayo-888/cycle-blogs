@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Nav = styled.div`
   padding: 0 2rem;
   display: flex;
+  width: 100%;
+
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -28,7 +30,6 @@ export const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-
   @media (max-width: 768px) {
     overflow: hidden;
     flex-direction: column;
@@ -39,13 +40,13 @@ export const Menu = styled.div`
 `;
 export const MenuLink = styled.a`
   padding: 1rem 2rem;
+
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   color: white;
   transition: all 0.3s ease-in;
   font-size: 1rem;
-
   &:hover {
     color: #1ae857;
     transform: translateX(-5px);
@@ -56,6 +57,7 @@ export const Hamburger = styled.div`
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-right: 30px;
   @media (max-width: 768px) {
     display: flex;
   }

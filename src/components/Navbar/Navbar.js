@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <Logo href=''>Cycling-Blogs</Logo>
+      <Logo href=''>Cyclist--blogs</Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <FaBars style={{ fontSize: '2rem', color: 'white' }} />
       </Hamburger>

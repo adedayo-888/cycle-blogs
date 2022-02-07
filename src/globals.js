@@ -2,11 +2,19 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;
-    padding: 0;
+    
     background: #d1c8b0;
-    font-family: Open-Sans,Roboto, Helvetica, Sans-Serif;
+    font-family: Roboto,  Sans-Serif;
+     overflow-x:hidden;
   }
+  *,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
 `;
 
 export default GlobalStyle;
